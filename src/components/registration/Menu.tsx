@@ -14,27 +14,10 @@ const Menu = () => {
         <Button component="a" href="/register" variant="outline">
           Apply to study at UTM
         </Button>
-        <Button variant="outline">View initiated applications</Button>
         <Button component="a" href="/information" variant="outline">
-          View application status
+          View Student Info
         </Button>
-        <Button variant="outline">Apply to become representative agent</Button>
       </Stack>
-      {/* <Stack sx={{ border: "solid 2px black" }} p="xl">
-        <Title align="center">Announcement</Title>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-          quis! Voluptas architecto maxime soluta autem adipisci eligendi saepe
-          beatae praesentium nemo et nobis, alias veritatis. Voluptatibus eaque
-          numquam minus nisi.
-        </Text>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-          quis! Voluptas architecto maxime soluta autem adipisci eligendi saepe
-          beatae praesentium nemo et nobis, alias veritatis. Voluptatibus eaque
-          numquam minus nisi.
-        </Text>
-      </Stack> */}
     </Group>
   );
 };

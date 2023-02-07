@@ -12,6 +12,7 @@ export class StudentInfo {
   studentType: "Undergraduate" | "Postgraduate" | undefined;
   supervisor?: string;
   pscCourseTaken?: "yes" | "no";
+  locality?: "Local" | "International";
 
   constructor(values: StudentInfo) {
     this.fullName = values.fullName;
@@ -23,24 +24,20 @@ export class StudentInfo {
     this.religion = values.religion;
     this.studentType = values.studentType;
     this.cgpa = values.cgpa;
+    this.locality = values.locality;
   }
 }
 
-export class UndergraduateStudent extends StudentInfo {
+export class UndergraduateStudent extends StudentInfo {}
+
+export class PostgraduateStudent extends StudentInfo {
+  supervisor: string | undefined;
   pscCourseTaken: "yes" | "no" | undefined;
 
   constructor(values: StudentInfo) {
     super(values);
-    this.pscCourseTaken = values.pscCourseTaken;
-  }
-}
-
-export class PostgraduateStudent extends StudentInfo {
-  supervisor: string | undefined;
-
-  constructor(values: StudentInfo) {
-    super(values);
     this.supervisor = "Dr Adila";
+    this.pscCourseTaken = values.pscCourseTaken;
   }
 }
 
